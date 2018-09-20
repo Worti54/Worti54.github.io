@@ -1,52 +1,164 @@
-/*images des cards*/
+@font-face {
+	font-family: "font-titles";
+	src: url('images/anicm___.ttf');
+}
+@font-face {
+	font-family: "font-text";
+	src: url('images/partybusiness.ttf');
+}
+@font-face {
+	font-family: "font-encadrement-titres";
+	src: url('images/tnganbi.ttf');
+}
+p, h5
+{
+	font-family: "font-text", Helvetica, Arial, sans-serif;
+}
+p
+{
+font-size: 1.8vw;
+}
 
+h1, h2, h3, h4, header
+{
+	font-family: "font-titles", Helvetica, Arial, sans-serif;
+}
+
+h2
+{
+	font-size: 2vw;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+h5
+{
+	font-size: 2vw;
+}
+.truc
+{
+	color: #ff6600;
+	font-family: "font-encadrement-titres", Helvetica, Arial, sans-serif;
+
+}
+/*nav bar*/
+.navbar
+{
+background-color: #ff6600;
+color: white !important
+}
+.navbar-nav
+{
+	margin-left: 57%;
+}
+.nav-item
+{
+	color: white;
+	margin-left: 5px;
+	border-right: solid white 1px;
+}
+.navbar-toggler-icon
+{
+	font-size: 2vw;
+	color: white;
+}
+
+/*caroussel*/
+
+
+.carousel-caption
+{
+bottom: 40%;
+font-size: 1.5vw;
+}
+
+/*images des cards*/
+#Fellows
+{
+background-image: url("images/bg_light.png");
+padding-top: 2%;
+padding-bottom: 2%;
+}
+.nav-pills
+{
+font-size: 2vw;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+.active1
+{
+color: #ff6600 !important;
+background: none !important;
+text-decoration : underline;
+}
+.nav-link
+{
+font-family: "font-text", Helvetica, Arial, sans-serif;
+color: gray;
+background: none !important;	
+}
 .card-img-top
 { 
 opacity: 0.50;  
+ }
+ .card-body1
+ {
+background-color: black;
  }
  .name
  {
  position: absolute;
  margin-top: 50%;
  align-self: center;
-font-size: 3em;
+font-size: 3.5vw;
 color: white;
  }
  .dead
  {
  position: absolute;
  margin-top: 50%;
- align-self: center;
-font-size: 3em;
-color: red;
+align-self: center;
+font-size: 3.5vw;
+color: white;
+text-decoration: line-through #ff6600;
  }
  .card-text
  {
  position: absolute;
  margin-top: 5%;
  align-self: center;
+ width: 70%;
+ text-align: center;
+ font-size: 2vw;
  background: white;
- font-size: 1.3em;
  border: solid white 1px;
- border-radius: 20px;
+ border-radius: 10px;
+ box-shadow: #999999 10px;
+ opacity: 0.8;
  }
  .card-text-dead
  {
- opacity: 0;
+	position: absolute;
+	margin-top: 5%;
+	align-self: center;
+	font-size: 2vw;
+	border-radius: 20px;
   }
+ 
  .reward
  {
- 	color: orange;
+ 	color: #ff6600;
  }
  .card-text2
  {
  	margin-top: 10%;
- 	text-align: center;
+	 text-align: center;
+	 color: gray;
  }
  .card-text3
  {
- 	
- 	text-align: center;
+	margin-top: 10%;
+	 text-align: center;
+	 color: gray;
  }
 .card:hover .card-img-top
 {
@@ -62,8 +174,90 @@ font-size: 1.8em;
 {
 	opacity: 0;
 }
+/*reward*/
+#GetMyReward
+ {
+	background-image: url("images/bg_dark.png");
+	padding-bottom: 2%;
+	color: white;
+ }
+.container 
+{
+	color: white;
+	max-width: 100%;
+	max-height: 50%;
+}
+.col-1
+{
+	margin: auto;
+}
+.btn-contact
+{
+	font-family: "font-text", Helvetica, Arial, sans-serif;
+	color: #ff6600;
+	background-color: white;
+	font-size: 2vw;
+	border: none;
+	padding-right: 10%;
+	padding-left: 10%;
+	margin-left: 33%;
+}
 
+
+/* hunters */
+
+#BestHunters
+{
+	background-image: url("images/bg_light.png");
+	padding-top: 2%;
+	padding-bottom: 2%;	
+}
+.mt-0
+{
+	color: #ff6600;
+	font-size: 2.5vw;
+}
+.hunters
+{
+	text-decoration: underline;
+}
+.btn-hate
+{
+	font-family: "font-text", Helvetica, Arial, sans-serif;
+	color: #ff6600;
+	background-color: black;
+	font-size: 1.5vw;
+	border: none;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-left: 5%;	
+}
 /* ring */
+#TheRing
+{
+	background-image: url("images/bg_dark.png");
+	padding-bottom: 2%;
+	color: white;	
+}
+.mb-3
+{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.card-header
+{
+	background-color: #ff6600;
+	font-size: 2vw;
+}
+.text-ring
+{
+	font-size: 1.5vw;
+}
+.card-body2
+{
+	font-family: "font-text", Helvetica, Arial, sans-serif;
+	color: black;
+}
 .case-responsive
 {
 border-top: solid black 1px;
@@ -80,34 +274,66 @@ color: black;
 }
 .gollum
 {
-color: lightgray;
+color: gray;
 text-align: right;
 }
-/*reward*/
-.container
+/* join the army*/
+#JoinTheArmy
 {
-	max-width: 100%;
-	max-height: 50%;
+	background-image: url("images/bg_light.png");
+	padding-top: 2%;
+	padding-bottom: 2%;	
+	color: black;
 }
-.col-1
+.col-7
 {
-	margin: auto;
+	padding-top: 5%;
+	color: black;
 }
-.bouton-cotact
-{ 
-margin-left: 45%;
-margin-right: auto;
+.info
+{
+	color: #ff6600;
+	margin-left: 50%;
+	font-size: 2vw;
 }
-/*army*/
 .btn
 {
+	font-family: "font-text", Helvetica, Arial, sans-serif;
 	margin-left: 40%;
-	background-color: white !important;
-	border: dotted gray 1px !important;
-	color: black !important;
+	background-color: black !important;
+	color: #ff6600 !important;
+	font-size: 2vw;
 }
+/* contact */
+#ContactUs
+{
+	font-size: 2vw;
+	font-family: "font-text", Helvetica, Arial, sans-serif;
+	background-image: url("images/bg_dark.png");
+	padding-bottom: 2%;
+	color: white;	
+}
+.mordor
+{
+	width: 100%;
+	padding-top: 20%;
+	padding-right: 15%;
+}
+
+
+
+
 /*footer*/
+footer
+{
+	background-color: #ff6600;
+	font-size: 1.5vw;
+}
+.col-3
+{
+	padding-left: 10%;
+}
 .col-6
 {
-margin-top: 2%;
+	padding-left: 20%;
 }
